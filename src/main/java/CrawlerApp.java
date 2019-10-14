@@ -4,7 +4,7 @@ import java.util.List;
 
 public class CrawlerApp  {
 
-    private static List<String> TOPICS = Arrays.asList("Agent Cooper", "Sherlock", "Poirot", "Miss Murple", "Detective Monk");
+    private static List<String> TOPICS = Arrays.asList("legwan zielony", "agama b³otna", "kameleon jemeñski", "anolis", "bazyliszek che³miasty");
 
 
     public static void main(String[] args) throws IOException {
@@ -12,7 +12,7 @@ public class CrawlerApp  {
         photoCrawler.resetLibrary();
 //        photoCrawler.downloadPhotoExamples();
 //        photoCrawler.downloadPhotosForQuery(TOPICS.get(0));
-        photoCrawler.downloadPhotosForMultipleQueries(TOPICS);
+        photoCrawler.advancedDownloadPhotosForMultipleQueries(TOPICS);
         try {
 			Thread.sleep(100_000);
 		} catch (InterruptedException e) {

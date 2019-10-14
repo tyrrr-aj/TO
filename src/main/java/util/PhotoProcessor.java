@@ -25,8 +25,6 @@ public class PhotoProcessor {
         return resize(photo, 300, 200);
     }
 
-
-
     private Photo resize(Photo photo, int scaledWidth, int scaledHeight)
             throws IOException {
 
